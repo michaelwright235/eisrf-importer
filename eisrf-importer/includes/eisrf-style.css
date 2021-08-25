@@ -1,0 +1,110 @@
+/* UI Tabs */
+.ui-tabs-vertical {
+    width: 90%;
+}
+.ui-tabs-vertical .ui-tabs-nav {
+    padding: 0;
+    width: 150px;
+    position: absolute;
+    margin: -4px -4px;
+    height: 100%;
+    border-bottom: #e9e9e9 2px solid;
+    border-right: #c5c5c5 1px solid;
+}
+.ui-tabs-vertical .ui-tabs-nav li {
+    clear: left; width: 100%;
+    border-bottom-width: 1px !important;
+    border-right-width: 0 !important;
+}
+.ui-tabs-vertical .ui-tabs-nav li a {
+    display:block;
+}
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-selected {
+    padding-bottom: 0;
+    padding-right: .1em;
+    border-right-width: 1px;
+}
+.ui-tabs-vertical .ui-tabs-panel {
+    padding: 16px 16px 16px 170px;
+}
+#tabs {
+    min-height: 310px;
+}
+.ui-tabs-nav > li, .ui-tabs-nav > li > a {
+    cursor: pointer;
+}
+#tab4 p {
+    margin-bottom: 0;
+}
+#tab4 ul {
+    list-style: disc;
+    margin-top: 0;
+    padding-left: 30px;
+}
+#tab4 a {
+    color: inherit;
+}
+
+#tab4 pre {
+    white-space: normal;
+    line-height: 1em;
+}
+.eisrf-green {
+    color: #1a8407;
+}
+.eisrf-yellow {
+    color: #e27807;
+}
+.eisrf-red {
+    color: #d52f29;
+}
+
+/* Loading animation */
+.eisrf-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+@-webkit-keyframes paint {
+    0% {
+        stroke-dashoffset: 0;
+    }
+}
+@-moz-keyframes paint {
+    0% {
+        stroke-dashoffset: 0;
+    }
+}
+@-o-keyframes paint {
+    0% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes paint {
+    0% {
+        stroke-dashoffset: 0;
+    }
+}
+.eisrf-loading svg {
+    width: 100px;
+    height: 100px;
+    stroke: #555d66;
+    stroke-width: 1;
+}
+.eisrf-loading svg .outer,
+.eisrf-loading svg .inner {
+    stroke-dasharray: 280;
+    stroke-dashoffset: 280;
+    -webkit-animation: paint 1.5s ease infinite alternate;
+    -moz-animation: paint 1.5s ease infinite alternate;
+    -o-animation: paint 1.5s ease infinite alternate;
+    animation: paint 1.5s ease infinite alternate;
+}
+.eisrf-loading p {
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+}
